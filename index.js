@@ -48,7 +48,7 @@ app.post("/login", (req, res) => {
         }else{
           if(data.body.isAuthenticated){
             path = "permission"
-        }
+          }
         }
 
 
