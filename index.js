@@ -73,3 +73,21 @@ async function doPostRequest(url, payload) {
   let data = res.data;
   return data;
 }
+
+app.get("/administrador", (req, res) => {
+  messageAlert = ''
+
+  res.render("listaAdministrador", {  messageAlert  } );
+})
+
+app.get("/alumno", (req, res) => {
+  messageAlert = ''
+
+  res.render("listaAlumno", {  messageAlert  } );
+})
+
+app.get("/profesor", (req, res) => {
+  messageAlert = ''
+
+  res.render("listaProfesor", {  messageAlert  } );
+})
